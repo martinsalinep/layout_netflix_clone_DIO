@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --red: #e50914;
+  --black: #141414;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* base elements */
+
+body {
+  background-color: var(--black);
+  font-family: "Roboto";
+  color: var(--white);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--red);
+  font-family: "Arial Black";
+  font-size: 2.5rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 2rem;
+}
+
+.navLink:hover {
+  color: var(--white);
+}
+
+/* Main movie */
+
+.movieMainBox {
+  font-size: 1.2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("../img/sharknado1.jpg") bottom/cover no-repeat;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.movieMainBox .container {
+  margin: 1.5rem;
+}
+
+.title {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 1.2rem 2rem;
+  color: var(--white);
+  margin-right: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.button:hover {
+  background-color: var(--white);
+  color: #141414;
+}
+
+i {
+  margin-right: 0.5rem;
+}
+
+.moviesCarousel{
+  margin-top:  0.5rem;
+}
+
+.boxMovies{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
